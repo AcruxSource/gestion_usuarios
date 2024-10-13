@@ -1,0 +1,22 @@
+services:
+  backend:
+    build: ./backend
+    container_name: backend
+    ports:
+      - "3000:3000"
+    networks:
+      - mi_red
+    volumes:
+      - ./backend/database:/usr/src/app/database
+
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    ports:
+      - "80:80"
+    networks:
+      - mi_red
+
+networks:
+  mi_red:
+    driver: bridge

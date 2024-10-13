@@ -1,0 +1,199 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body::before {
+  position: relative;
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #003366, #006699);
+  color: #fff;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.356);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 2rem;
+  top: 30px;
+  color: #fff;
+  width: 100vw;
+  height: 2vh;
+}
+
+main {
+  position: absolute;
+  inset: 0, 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+}
+.createFrom-container {
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  width: 380px;
+  height: 550px;
+  color: #fff;
+}
+
+.createFrom-container h2 {
+  position: absolute;
+  top: 60px;
+  right: 50px;
+  width: 200px;
+  text-align: center;
+}
+
+#create-Form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-weight: bold;
+}
+
+#create-Form img {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 120px;
+  width: 80px;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+#create-Form label {
+  margin-top: 20px;
+}
+
+#create-Form input {
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  outline: none;
+  font-size: 15px;
+  color: white;
+}
+
+#create-Form div {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+  margin-top: 20px;
+}
+
+#create-Form button {
+  width: 100px;
+  height: 25px;
+  border: none;
+  border-radius: 20px;
+}
+
+.container-user {
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  width: 800px;
+  height: 550px;
+  color: #fff;
+}
+
+.container-user h2 {
+  position: absolute;
+  inset: 20px;
+}
+
+#userList {
+  position: absolute;
+  display: block;
+  width: 750px;
+  height: 450px;
+  border-radius: 10px;
+  left: calc((800px - 750px) / 2);
+  top: calc((550px - 450px) / 2);
+  border: 1px solid rgb(255, 255, 255);
+  border-collapse: collapse;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+#userList th {
+  height: 30px;
+  position: sticky;
+  top: 0;
+  text-align: left;
+  z-index: 1;
+  background-color: #00000049;
+  padding: 0px 8px;
+}
+
+#userList th:nth-child(1) {
+  width: 100px;
+}
+
+#userList th:nth-child(2) {
+  width: 100px;
+}
+
+#userList th:nth-child(3) {
+  width: 80px;
+}
+
+#userList th:nth-child(4) {
+  width: 160px;
+}
+
+#userList th:nth-child(5) {
+  width: 160px;
+}
+
+#userList th:nth-child(6) {
+  width: 190px;
+}
+
+#userList td {
+  padding: 9px 8px;
+}
+
+tr.selected {
+  background-color: rgba(255, 0, 0, 0.274);
+}
+
+span {
+  display: none;
+  position: absolute;
+  width: 500px;
+  height: 20px;
+  left: 20px;
+  bottom: 10px;
+  font-size: 16px;
+  padding-top: calc((20px - 14px) / 2);
+  padding-left: 14px;
+}
+
+.container-user button {
+  position: absolute;
+  width: 100px;
+  height: 25px;
+  border: none;
+  border-radius: 20px;
+  right: 20px;
+  bottom: 10px;
+}
